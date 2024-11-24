@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostlyCinema</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!--GOggles fontues-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bevan:ital@0;1&family=Bokor&family=Bungee+Shade&family=Catamaran:wght@100..900&family=Creepster&family=Eater&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Lilita+One&family=Nosifer&family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="content">
+
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="index.html"><img src="images/logo.jpg" style="border-color: black;"></a>
+            </div>
+            <div class="mobile">
+                <a href="index.html"><img src="images/mobile.jpg" style="border-color: black;" ></a>  
+            </div>
+        </div>
+    </header>
+
+    <main>
+               <!-- Search section -->
+        <section>
+            <div>
+               <input type="text" id="searchInput" class="search-box" placeholder="Search Movies..." onkeyup="searchMovies()">
+                <div id="noResultsMessage" class="no-results">No results found....</div>
+            </div>
+        </section>
+            <section>
+                <div  class="fix-font" >
+                <h3 id="thrillers" class="category-heading">Thriller</h3>
+                <!--ROW 6-->
+                    <div class="row" id="movielist">
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/joker.jpg">
+                                <div>
+                                    <h4>Joker</h4>
+                                    <p>Genre: Thriller, Crime</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/blink_twice.jpg">
+                                <div>
+                                    <h4>Blink Twice</h4>
+                                    <p>Genre: Thriller, Suspense</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/se7en.jpg">
+                                <div>
+                                    <h4>Se7en</h4>
+                                    <p>Genre: Crime, Drama, Thriller</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/the_guilty.jpg">
+                                <div>
+                                    <h4>The Guilty</h4>
+                                    <p>Genre: Thriller, Crime</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/outside.AVIF">
+                                <div>
+                                    <h4>Outside</h4>
+                                    <p>Genre: Horror, Thriller</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <h5>MADE by <a href="https://www.facebook.com/areowndapne.crls1" target="_blank" title="View areowndapne's FB page">AREOWN</a> & <a href="https://www.facebook.com/chynnamae.lacsa" target="_blank" title="View chynnamae's FB page">CHYNNA</a> © Ghostly Cinema 2024</h5>
+    </footer>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>

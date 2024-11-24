@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostlyCinema</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!--GOggles fontues-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bevan:ital@0;1&family=Bokor&family=Bungee+Shade&family=Catamaran:wght@100..900&family=Creepster&family=Eater&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Lilita+One&family=Nosifer&family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body >
+<div class="content">
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="images/logo.jpg" style="border-color: black;">             
+            </div>
+            <div class="mobile">
+                <img src="images/mobile.jpg" style="border-color: black;" >   
+            </div>
+            
+            <nav>
+                <ul>
+                    <!-- Main Menu Item: Browse -->
+                    <li class="nav-item dropdown">
+                        <a href="#">Browse</a>
+                        <ul class="dropdown-menu">
+                            <li class="submenu-item">
+                                <a href="#popular">Popular</a>
+                                <ul class="submenu">
+                                    <li><a href="#top_movies">Top Movies</a></li>
+                                    <li><a href="#new_movies">New Movies</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#genre">Genres</a>
+                                <ul class="submenu">
+                                    <li><a href="#anime">Anime</a></li>
+                                    <li><a href="#mystery">Mystery</a></li>
+                                    <li><a href="#horror">Horror</a></li>
+                                    <li><a href="#thrillers">Thriller</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+               <!-- Search section -->
+        <section>
+            <div>
+               <input type="text" id="searchInput" class="search-box" placeholder="Search Movies..." onkeyup="searchMovies()">
+                <div id="noResultsMessage" class="no-results">No results found....</div>
+            </div>
+        </section>
+
+
+       <!-- Movies Pahapyaw -->
+       <section  id="popular">
+            <section>
+                <div class="fix-font" >
+                <h3 id="top_movies"  class="category-heading"><a>Top Movies</a></h3>  
+                <!--ROW 1-->
+                    <div class="row" id="movielist">
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/the_grudge1.jpg">
+                                <div>
+                                    <h4>The Grudge</h4>
+                                    <p>2004</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/uzumaki.jpg">
+                                <div>
+                                    <h4>Uzumaki</h4>
+                                    <p>2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/sinister1.jpg">
+                                <div>
+                                    <h4>Sinister</h4>
+                                    <p>2012</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/tusk.jpg">
+                                <div>
+                                    <h4>Tusk</h4>
+                                    <p>2019</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/the_exorcist2.jpg">
+                                <div>
+                                    <h4>Exorcist II: The Heretic</h4>
+                                    <p>1997</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/terrifier_1.jpg">
+                                <div>
+                                    <h4>Terrifier 1</h4>
+                                    <p>2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/the_grudge2.jpg">
+                                <div>
+                                    <h4>The Grudge 3</h4>   
+                                    <p>2009</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/the_ring.jpg">
+                                <div>
+                                    <h4>The Ring</h4>
+                                    <p>2002</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/outside.AVIF">
+                                <div>
+                                    <h4>Outside</h4>
+                                    <p>2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/human_centi1.jpg">
+                                <div>
+                                    <h4>The Human Centipede</h4>
+                                    <p>2009</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>             
+                </div>
+            </section>
+
+            <section>
+                <div class="fix-font" >
+                <h3 id="new_movies"  class="category-heading"  ><a>New Movies</a></h3>
+            <!--ROW 2-->
+                    <div class="row" id="movielist">
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/outside.AVIF">
+                                <div>
+                                    <h4>Outside</h4>
+                                    <p>2024</p>
+                                </div>
+                            </div>
+                        </div>                          
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/the_Grudge1.0.jpg">
+                                <div>
+                                    <h4>The Grudge</h4>
+                                    <p>2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/bird_box.jpg">
+                                <div>
+                                    <h4>Bird Box</h4>
+                                    <p>2018</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/junji_itomaniac.jpg">
+                                <div>
+                                    <h4>Junji Ito Maniac</h4>
+                                    <p>2023</p>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/evil_lurks.jpg">
+                                <div>
+                                    <h4>When Evil Lurks</h4>
+                                    <p>2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="genre">  
+            <section>                      
+                <div class="fix-font" >
+                <h3 id="anime" class="category-heading"><a href="anime.html">Anime</a></h3>
+                <!--ROW 3-->
+                    <div class="row" id="movielist">
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/eflen_leid.jpg">
+                                <div>
+                                    <h4>Eflen Lied</h4>
+                                    <p>2004</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/another.jpg">
+                                <div>
+                                    <h4>Another</h4>
+                                    <p>2012</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/tokyo_ghoul.jpg">
+                                <div>
+                                    <h4>Tokyo Ghoul: Jack</h4>
+                                    <p>2015</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/tprom_nvrland.jpg">
+                                <div>
+                                    <h4>The Promise Neverland</h4>
+                                    <p>2019</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/w-they_cry.jpg">
+                                <div>
+                                    <h4>Higurashi When They Cry</h4>
+                                    <p>2006</p>
+                                </div>
+                            </div>
+                        </div> 
+                     
+                    </div>
+
+                </div>
+            </section>
+
+            <section>
+                <div  class="fix-font" >
+                <h3 id="mystery" class="category-heading"><a href="mystery.html">Mystery</a></h3>
+                <!--ROW 4-->
+                    <div class="row" id="movielist">
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/the_exorcist1.jpg">
+                                <div>
+                                    <h4>The Exorcist</h4>
+                                    <p>1973</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/the nun1.jpg">
+                                <div>
+                                    <h4>The Nun</h4>
+                                    <p>2019</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/conjuring_2.jpg">
+                                <div>
+                                    <h4>The Conjuring 2</h4>
+                                    <p>2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/ana_3.0.jpg">
+                                <div>
+                                    <h4>Annabelle Comes Home</h4>
+                                    <p>2019</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/the curse.jpg">
+                                <div>
+                                    <h4>The Curse of La Llonora</h4>
+                                    <p>2019</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div  class="fix-font" >
+                <h3 id="horror" class="category-heading"><a href="horror.html">Horror</a></h3>
+                <!--ROW 5-->
+                    <div class="row" id="movielist">
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/the_exorcist2.jpg">
+                                <div>
+                                    <h4>Exorcist II: The Heretic</h4>
+                                    <p>1997</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/terrifier_1.jpg">
+                                <div>
+                                    <h4>Terrifier 1</h4>
+                                    <p>2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/platform_1.jpg">
+                                <div>
+                                    <h4>The Platform
+                                    <p>2019</p>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/smile.jpg">
+                                <div>
+                                    <h4>Smile</h4>
+                                    <p>2022</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/it.jpg">
+                                <div>
+                                    <h4>It</h4>
+                                    <p>2017</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div  class="fix-font" >
+                <h3 id="thrillers" class="category-heading"><a href="thrillers.html">Thriller</a></h3>
+                <!--ROW 6-->
+                    <div class="row" id="movielist">
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/joker.jpg">
+                                <div>
+                                    <h4>Joker</h4>
+                                    <p>2019</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/blink_twice.jpg">
+                                <div>
+                                    <h4>Blink Twice</h4>
+                                    <p>2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/se7en.jpg">
+                                <div>
+                                    <h4>Se7en</h4>
+                                    <p>1995</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/the_guilty.jpg">
+                                <div>
+                                    <h4>The Guilty</h4>
+                                    <p>2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container movie-item">
+                            <div class="column image-container">
+                                <img src="images/outside.AVIF">
+                                <div>
+                                    <h4>Outside</h4>
+                                    <p>2024</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <h5>MADE by <a href="https://www.facebook.com/areowndapne.crls1" target="_blank" title="View areowndapne's FB page">AREOWN</a> & <a href="https://www.facebook.com/chynnamae.lacsa" target="_blank" title="View chynnamae's FB page">CHYNNA</a> © Ghostly Cinema 2024</h5>
+    </footer>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
